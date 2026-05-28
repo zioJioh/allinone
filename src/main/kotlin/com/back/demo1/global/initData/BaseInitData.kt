@@ -7,11 +7,9 @@ import org.springframework.cache.annotation.Cacheable
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.Lazy
-import org.springframework.context.annotation.Profile
 import org.springframework.transaction.annotation.Transactional
 
 @Configuration
-@Profile("!Prod")
 class BaseInitData(
     private val postService: PostService
 ) {
