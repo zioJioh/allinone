@@ -1,7 +1,9 @@
 spring:
   data:
     redis:
+      host: redis_1
       port: 6379
+      password: "${custom.prod.redis.password}"
 
   datasource:
     url: jdbc:mysql://mysql_1:3306/glog_prod
@@ -12,7 +14,7 @@ spring:
       auto-commit: false
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         format_sql: false
