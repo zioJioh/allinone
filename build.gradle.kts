@@ -37,6 +37,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    implementation("com.github.codemonstur:embedded-redis:1.4.3")
+    implementation ("org.springframework.boot:spring-boot-starter-cache")
 }
 
 kotlin {
